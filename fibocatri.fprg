@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-11 11:41:52 PM"/>
+        <attribute name="created" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMTE7MTE6MTM6MjUgUE07MjYwNQ=="/>
+        <attribute name="edited" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMTE7MTE6NDE6NTIgUE07MTsyNzE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;nhap n&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <declare name="fib" type="Integer" array="True" size="n"/>
+            <for variable="a" start="0" end="n-1" direction="inc" step="1">
+                <if expression="a==0 or a==1">
+                    <then>
+                        <assign variable="fib[a]" expression="a"/>
+                    </then>
+                    <else>
+                        <assign variable="fib[a]" expression="fib[a-2]+fib[a-1]"/>
+                    </else>
+                </if>
+                <output expression="&quot;f(&quot;&amp;a&amp;&quot;)=&quot;&amp;fib[a]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

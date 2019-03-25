@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 09:43:22 PM"/>
+        <attribute name="created" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMjU7MDk6MzU6MzggUE07MjYyNQ=="/>
+        <attribute name="edited" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMjU7MDk6NDM6MjIgUE07MTsyNzI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;nhap a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;nhap b&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;bt vo so nghiem&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;phuong trinh vo nghiem&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="x" expression="-b/a"/>
+                    <output expression="&quot;pt co nghiem&quot;&amp;x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

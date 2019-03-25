@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-07 03:25:06 PM"/>
+        <attribute name="created" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMDc7MDM6MTY6MzcgUE07MjYxNw=="/>
+        <attribute name="edited" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMDc7MDM6MjU6MDYgUE07MTsyNzIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <declare name="h" type="Integer" array="False" size=""/>
+            <declare name="l" type="Integer" array="False" size=""/>
+            <output expression="&quot;canhday&quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;chieucao&quot;" newline="True"/>
+            <input variable="h"/>
+            <assign variable="s" expression="h*l/2"/>
+            <output expression="&quot;dientichtamgiac&quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-07 08:03:07 PM"/>
+        <attribute name="created" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMDc7MDY6NDU6MTIgUE07MjYxNQ=="/>
+        <attribute name="edited" value="QWRtaW47S0lUSFVBVDg4LVBDOzIwMTktMDMtMDc7MDg6MDM6MDcgUE07MzsyNzI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;an a=&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;an b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;an c&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <if expression="c==0">
+                                <then>
+                                    <output expression="&quot; pt vo so nghiem&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;pt vo nghiem&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="x" expression="-c/b"/>
+                            <output expression="&quot; pt co nghiem kep &quot;&amp;x" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <declare name="detal" type="Integer" array="False" size=""/>
+                    <assign variable="detal" expression="b*b-4*a*c"/>
+                    <if expression="detal&gt;=0">
+                        <then>
+                            <if expression="detal==0">
+                                <then>
+                                    <assign variable="x" expression="-b/(2*a)"/>
+                                    <output expression="&quot;pt co nghiem kep&quot;&amp;x" newline="True"/>
+                                </then>
+                                <else>
+                                    <declare name="x1" type="Integer" array="False" size=""/>
+                                    <declare name="x2" type="Integer" array="False" size=""/>
+                                    <assign variable="x1" expression="(-b-sqrt(detal))/(2*a)"/>
+                                    <assign variable="x2" expression="(-b+sqrt(detal))/(2*a)"/>
+                                    <output expression="&quot;pt co nghiem&quot;" newline="True"/>
+                                    <output expression="x1&amp;&quot; va &quot;&amp;x2" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;pt vo nghiem&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
